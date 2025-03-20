@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Chat Room</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://i.imgur.com/TYNnZQI.jpg') repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px red;
+            letter-spacing: 3px;
+        }
+        .chat-iframe {
+            width: 90%;
+            max-width: 1200px;
+            height: 70vh;
+            border: 3px solid red;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px red;
+            transition: transform 0.3s ease-in-out;
+        }
+        .chat-iframe:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 30px red;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Online Chat Room</h1>
+        <iframe class="chat-iframe" src="https://chat-app-1742440911-f95c054c85d2.herokuapp.com" allowfullscreen></iframe>
+        <footer>Powered by Martinez Worldwide</footer>
+    </div>
+</body>
+</html>
